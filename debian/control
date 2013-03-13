@@ -1,0 +1,23 @@
+Source: libperl-ostype-perl
+Section: perl
+Priority: optional
+Maintainer: Alexander Wirt <alexander.wirt@credativ.de>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.3
+Homepage: http://search.cpan.org/dist/Perl-OSType/
+
+Package: libperl-ostype-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Map Perl operating system names to generic types
+ Modules that provide OS-specific behaviors often need to know if the current
+ operating system matches a more generic type of operating systems. For
+ example, 'linux' is a type of 'Unix' operating system and so is 'freebsd'.
+ .
+ Perl::OSType provides a mapping between an operating system name as given by
+ $^O and a more generic type. The initial version is based on the OS type
+ mappings provided in Module::Build and ExtUtils::CBuilder. (Thus, Microsoft
+ operating systems are given the type 'Windows' rather than 'Win32'.)
+ .
+ This description was automagically extracted from the module by dh-make-perl.
